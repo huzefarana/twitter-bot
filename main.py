@@ -35,7 +35,7 @@ def post_tweet():
             "Authorization": f'OAuth oauth_consumer_key="{X_API_KEY}",oauth_token="{X_ACCESS_TOKEN}",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1698450376",oauth_nonce="IKyeonwsItU",oauth_version="1.0",oauth_signature="feWp1pD%2BCeuHS%2BiYnBeIAR9dDTw%3D"',
             "Cookie": 'guest_id=v1%3A169844508887984404; guest_id_ads=v1%3A169844508887984404; guest_id_marketing=v1%3A169844508887984404; personalization_id="v1_oWzgkOxyMejRSts5xQtdsw=="',
         }
-        print(headers)
+        print(X_URL,X_API_KEY,X_ACCESS_TOKEN)
         #POST request to Twitter X
         response = requests.request("POST", X_URL, headers=headers, data=payload)
 
